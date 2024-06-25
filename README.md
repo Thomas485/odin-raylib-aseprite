@@ -1,6 +1,6 @@
 # odin-raylib-aseprite
 
-A simple (incomplete) odin-binding for [raylib-aseprite](https://github.com/RobLoach/raylib-aseprite)
+A simple odin-binding for [raylib-aseprite](https://github.com/RobLoach/raylib-aseprite)
 
 ## building
 run `build.sh` or `build_win_cross.sh`
