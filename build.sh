@@ -14,7 +14,7 @@ fi
 
 # download raylib
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo .. 
 
 # build
 cd ../..
