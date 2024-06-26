@@ -89,7 +89,7 @@ foreign ase {
 	// void DrawAsepriteTagEx(AsepriteTag tag, Vector2 position, float rotation, float scale, Color tint);
 	DrawAsepriteTagEx :: proc(tag: AsepriteTag, position: raylib.Vector2, rotation: c.float, scale: c.float, tint: raylib.Color) ---
 	// void DrawAsepriteTagPro(AsepriteTag tag, Rectangle dest, Vector2 origin, float rotation, Color tint);
-	DrawAsepritePro :: proc(tag: AsepriteTag, dest: raylib.Rectangle, origin: raylib.Vector2, rotation: c.float, tint: raylib.Color) ---
+	DrawAsepriteTagPro :: proc(tag: AsepriteTag, dest: raylib.Rectangle, origin: raylib.Vector2, rotation: c.float, tint: raylib.Color) ---
 	// void DrawAsepriteTagFlipped(AsepriteTag tag, int posX, int posY, bool horizontalFlip, bool verticalFlip, Color tint);
 	DrawAsepriteTagFlipped :: proc(tag: AsepriteTag, posX: c.int, posY: c.int, horizontalFlip: c.bool, verticalFlip: c.bool, tint: raylib.Color) ---
 	// void DrawAsepriteTagVFlipped(AsepriteTag tag, Vector2 position, bool horizontalFlip, bool verticalFlip, Color tint);
@@ -97,7 +97,7 @@ foreign ase {
 	// void DrawAsepriteTagExFlipped(AsepriteTag tag, Vector2 position, float rotation, float scale, bool horizontalFlip, bool verticalFlip, Color tint);
 	DrawAsepriteTagExFlipped :: proc(tag: AsepriteTag, position: raylib.Vector2, rotation: c.float, scale: c.float, horizontalFlip: c.bool, verticalFlip: c.bool, tint: raylib.Color) ---
 	// void DrawAsepriteTagProFlipped(AsepriteTag tag, Rectangle dest, Vector2 origin, float rotation, bool horizontalFlip, bool verticalFlip, Color tint);
-	DrawAsepriteProFlipped :: proc(tag: AsepriteTag, dest: raylib.Rectangle, origin: raylib.Vector2, rotation: c.float, horizontalFlip: c.bool, verticalFlip: c.bool, tint: raylib.Color) ---
+	DrawAsepriteTagProFlipped :: proc(tag: AsepriteTag, dest: raylib.Rectangle, origin: raylib.Vector2, rotation: c.float, horizontalFlip: c.bool, verticalFlip: c.bool, tint: raylib.Color) ---
 
 
 	// Aseprite Slice functions
