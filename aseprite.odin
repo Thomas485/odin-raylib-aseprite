@@ -38,8 +38,8 @@ foreign ase {
 	LoadAseprite :: proc(fileName: cstring) -> Aseprite ---
 	// Aseprite LoadAsepriteFromMemory(unsigned char* fileData, int size);
 	LoadAsepriteFromMemory :: proc(fileData: ^c.uchar, size: c.int) -> Aseprite ---
-	// bool IsAsepriteReady(Aseprite aseprite);
-	IsAsepriteReady :: proc(aseprite: Aseprite) -> c.bool ---
+	// bool IsAsepriteValid(Aseprite aseprite);
+	IsAsepriteValid :: proc(aseprite: Aseprite) -> c.bool ---
 	// void UnloadAseprite(Aseprite aseprite);
 	UnloadAseprite :: proc(aseprite: Aseprite) ---
 	// void TraceAseprite(Aseprite aseprite);
@@ -76,8 +76,8 @@ foreign ase {
 	LoadAsepriteTagFromIndex :: proc(aseprite: Aseprite, index: c.int) -> AsepriteTag ---
 	// int GetAsepriteTagCount(Aseprite aseprite);
 	GetAsepriteTagCount :: proc(aseprite: Aseprite) -> c.int ---
-	// bool IsAsepriteTagReady(AsepriteTag tag);
-	IsAsepriteTagReady :: proc(tag: AsepriteTag) -> c.bool ---
+	// bool IsAsepriteTagValid(AsepriteTag tag);
+	IsAsepriteTagValid :: proc(tag: AsepriteTag) -> c.bool ---
 	// void UpdateAsepriteTag(AsepriteTag* tag);
 	UpdateAsepriteTag :: proc(tag: ^AsepriteTag) ---
 	// AsepriteTag GenAsepriteSliceDefault();
@@ -108,8 +108,8 @@ foreign ase {
 	LoadAsepriteSliceFromIndex :: proc(aseprite: Aseprite, index: c.int) -> AsepriteSlice ---
 	// int GetAsepriteSliceCount(Aseprite aseprite);
 	GetAsepriteSliceCount :: proc(slice: AsepriteSlice) -> c.int ---
-	// bool IsAsepriteSliceReady(AsepriteSlice slice);
-	IsAsepriteSliceReady :: proc(slice: AsepriteSlice) -> c.bool ---
+	// bool IsAsepriteSliceValid(AsepriteSlice slice);
+	IsAsepriteSliceValid :: proc(slice: AsepriteSlice) -> c.bool ---
 	// AsepriteSlice GenAsepriteSliceDefault();
 	GenAsepriteSliceDefault :: proc() -> AsepriteSlice ---
 }
