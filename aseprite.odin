@@ -1,4 +1,4 @@
-package main
+package ase
 
 import "core:c"
 import "vendor:raylib"
