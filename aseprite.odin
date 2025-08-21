@@ -4,7 +4,7 @@ import "core:c"
 import "vendor:raylib"
 
 when ODIN_OS == .Windows do foreign import ase "ase.lib"
-when ODIN_OS == .Linux do foreign import ase "ase.a"
+when ODIN_OS == .Linux || ODIN_OS == .Darwin do foreign import ase "ase.a"
 
 ase_t :: struct {}
 ase_tag_t :: struct {}
